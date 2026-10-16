@@ -62,6 +62,7 @@
       "txHash": "0x4adec97b31a825c3998eead0a6447354b367b22272caecbf9da7366e553406b6",
       "expected": {
         "intent": "Update order approval",
+        "interpolatedIntent": "Set order approval of 0x958eB498a4172EA513c79b09E7f064070C5b1917 to Yes",
         "fields": [
           {
             "label": "Maker",

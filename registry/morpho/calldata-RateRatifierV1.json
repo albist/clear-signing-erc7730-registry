@@ -39,6 +39,7 @@
     "formats": {
       "setIsRootRatified(address maker,bytes32 root,bool newIsRootRatified)": {
         "intent": "Update order approval",
+        "interpolatedIntent": "Set order approval of {#.maker} to {#.newIsRootRatified}",
         "fields": [
           {
             "path": "#.maker",

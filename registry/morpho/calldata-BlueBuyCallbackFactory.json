@@ -33,6 +33,7 @@
     "formats": {
       "createBlueBuyCallback(address owner,bytes32 salt)": {
         "intent": "Create buy callback",
+        "interpolatedIntent": "Create buy callback for {#.owner}",
         "fields": [
           {
             "path": "#.owner",

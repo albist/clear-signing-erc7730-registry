@@ -39,6 +39,7 @@
     "formats": {
       "midnightBundlesV2CancelAndMake((address loanToken,address collateralToken,address oracle,address irm,uint256 lltv) blueMarket,uint256 assetsToPark,bytes32 callbackSalt,(uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,(uint256 collateralIndex,uint256 assets)[] collateralSupplies,address ratifier,bytes32 newRoot,uint256 signatureHeight,uint128 signatureNonce,uint256 signatureDeadline,uint8 v,bytes32 r,bytes32 s,(bytes32 group,uint128 maxConsumed)[] groupsToCancel,bytes payload,uint256 deadline,address wrappedNative)": {
         "intent": "Manage Midnight offers",
+        "interpolatedIntent": "Update offers with ratifier {#.ratifier}",
         "fields": [
           {
             "path": "#.blueMarket.loanToken",
@@ -275,6 +276,7 @@
       },
       "midnightBundlesV2BuyWithUnitsTargetAndWithdrawCollateral((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetUnits,uint256 maxBuyerAssets,bool reduceOnly,bool repayEnabled,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,(uint256 collateralIndex,uint256 assets)[] collateralWithdrawals,address collateralReceiver,uint256 referralFeePct,address referralFeeRecipient,uint256 maxContinuousFee,uint256 deadline,address wrappedNative)": {
         "intent": "Buy and withdraw collateral",
+        "interpolatedIntent": "Buy {#.targetUnits} at maturity for max {#.maxBuyerAssets}",
         "fields": [
           {
             "label": "Loan token",
@@ -692,6 +694,7 @@
       },
       "midnightBundlesV2BuyWithAssetsTargetAndWithdrawCollateral((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetBuyerAssets,uint256 minUnits,bool reduceOnly,bool repayEnabled,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,(uint256 collateralIndex,uint256 assets)[] collateralWithdrawals,address collateralReceiver,uint256 referralFeePct,address referralFeeRecipient,uint256 maxContinuousFee,uint256 deadline,address wrappedNative)": {
         "intent": "Buy and withdraw collateral",
+        "interpolatedIntent": "Buy min {#.minUnits} at maturity for {#.targetBuyerAssets}",
         "fields": [
           {
             "label": "Loan token",
@@ -1109,6 +1112,7 @@
       },
       "midnightBundlesV2SupplyCollateralAndSellWithAssetsTarget((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetSellerAssets,uint256 maxUnits,bool reduceOnly,address receiver,(uint256 collateralIndex,uint256 assets)[] collateralSupplies,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,uint256 referralFeePct,address referralFeeRecipient,uint256 deadline,address wrappedNative)": {
         "intent": "Supply and sell collateral",
+        "interpolatedIntent": "Sell max {#.maxUnits} at maturity for {#.targetSellerAssets} to {#.receiver}",
         "fields": [
           {
             "label": "Loan token",

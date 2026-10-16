@@ -62,6 +62,7 @@
       "txHash": "0x40898ff985009bcfddcb5d1286d2d3faea802cef09a5929afec08cdd0a9bffa1",
       "expected": {
         "intent": "Take offer",
+        "interpolatedIntent": "Fill 0.952344 USDC of offer by 0xd4F43105098845fFE89B16E7A3DCdd0A31898118 for 0x37572Bf30F51A3076E1586000a856D7Ee25800B6",
         "fields": [
           {
             "label": "Loan token",
@@ -173,6 +174,7 @@
       "txHash": "0x08bfa27f4b85f2f8bed25e706ba20ffd3555efe36921d8dce315d09ba504e292",
       "expected": {
         "intent": "Take offer",
+        "interpolatedIntent": "Fill 0.202369 USDC of offer by 0x743Af5d985800D690b7f6025A9F1a002c910E74F for 0xeb5D5DBCC988EBd985e36eC58DD1759DBCEdAC32",
         "fields": [
           {
             "label": "Loan token",
@@ -284,6 +286,7 @@
       "txHash": "0xe8869e63c339fe8a5256fc7316a025c62b4d635e0ea286e0d473fd05d25dce1e",
       "expected": {
         "intent": "Withdraw loan",
+        "interpolatedIntent": "Withdraw 0.299802 USDC to 0x711244331932DfB50D0eceE61d312a25c1cF1397",
         "fields": [
           {
             "label": "Loan token",
@@ -339,6 +342,7 @@
       "txHash": "0x98a497dd955f1c5f60a61d7a81a400a9c2470cdefa2eef88b8c644e4913ce1f7",
       "expected": {
         "intent": "Withdraw loan",
+        "interpolatedIntent": "Withdraw 0.00002 WETH to 0x958eB498a4172EA513c79b09E7f064070C5b1917",
         "fields": [
           {
             "label": "Loan token",
@@ -382,6 +386,7 @@
       "txHash": "0xde91796d2241419c5956e228b61abf96d0106e2c7a8a2dca1af62fc51587f0b1",
       "expected": {
         "intent": "Repay loan",
+        "interpolatedIntent": "Repay 0.952344 USDC for 0x37572Bf30F51A3076E1586000a856D7Ee25800B6",
         "fields": [
           {
             "label": "Loan token",
@@ -437,6 +442,7 @@
       "txHash": "0xeb87107a4948664a46c5d6c2c3de38616c88f38cd197365dbff6e49af14759fd",
       "expected": {
         "intent": "Repay loan",
+        "interpolatedIntent": "Repay 1.96 USDC for 0xeb5D5DBCC988EBd985e36eC58DD1759DBCEdAC32",
         "fields": [
           {
             "label": "Loan token",
@@ -492,6 +498,7 @@
       "txHash": "0x2123a5583493c41e8ede036c701612720ad939107a606c4af193402a71d27d7a",
       "expected": {
         "intent": "Supply collateral",
+        "interpolatedIntent": "Supply 18709 of collateral 0 for 0x493b77d7682Af129cd18222bdeb2d943545c7500",
         "fields": [
           {
             "label": "Loan token",
@@ -535,6 +542,7 @@
       "txHash": "0xb7e03965f841ac7df25195bd1dca98c33a643ede79b6ac37e86da1c113e9e60a",
       "expected": {
         "intent": "Supply collateral",
+        "interpolatedIntent": "Supply 5000000000000 of collateral 0 for 0x493b77d7682Af129cd18222bdeb2d943545c7500",
         "fields": [
           {
             "label": "Loan token",
@@ -578,6 +586,7 @@
       "txHash": "0x7b9af18df28a35ef4a224c2899d21866e5a06208b0453cf548315eefebdc228d",
       "expected": {
         "intent": "Withdraw collateral",
+        "interpolatedIntent": "Withdraw 12573 of collateral 1 to 0x7575e4F77fF4f650DdA9c89F5573bcc9C145D13F",
         "fields": [
           {
             "label": "Loan token",
@@ -637,6 +646,7 @@
       "txHash": "0xdae6eb803a0d3073a07a46c5f02f823edeeb548b157e43f5579cfac64a9985aa",
       "expected": {
         "intent": "Withdraw collateral",
+        "interpolatedIntent": "Withdraw 5000000000000 of collateral 0 to 0x493b77d7682Af129cd18222bdeb2d943545c7500",
         "fields": [
           {
             "label": "Loan token",
@@ -684,6 +694,7 @@
       "txHash": "0x47099243219d09b466d051f2264faa269adff148e33c7c34a1cab25f344c6ef8",
       "expected": {
         "intent": "Cancel offers in group",
+        "interpolatedIntent": "Cancel offers in group 0xf4e1dd2eb276e965160b180cfe58cfc655c25cf704c4d387ec62ed0dedeb7fcd for 0x3dd21853BB365C2cf6C9D933f2BFDE1a5C54461C",
         "fields": [
           {
             "label": "Group",
@@ -707,6 +718,7 @@
       "txHash": "0xff74a9283bdf371830d1aaa1232c1371ee9743151f2fcad4742dda9dc2f7bba7",
       "expected": {
         "intent": "Cancel offers in group",
+        "interpolatedIntent": "Cancel offers in group 0xeaa2274cd77aaac46c3756acb491eff2f9e339edd61dab1bac6df3320d429212 for 0xa9e65486bd8eA9ff4AFD6db8e59b6C9e937f20e1",
         "fields": [
           {
             "label": "Group",
@@ -730,6 +742,7 @@
       "txHash": "0xdc85b2e40e9b65fbe59fc0fc19072ea9840bedcf2335cb37dcb34ccd94df4095",
       "expected": {
         "intent": "Manage Midnight authorization",
+        "interpolatedIntent": "Set authorization of 0xAC439c81CAA6ef4C7B7E8F0110F8CE63A4b6D43e to Grant",
         "fields": [
           {
             "label": "Authorized",
@@ -753,6 +766,7 @@
       "txHash": "0xee6603b2078cb813b4dacc1a18aeeda8e1cba1f03f9a83a72fdbc38162c863ca",
       "expected": {
         "intent": "Manage Midnight authorization",
+        "interpolatedIntent": "Set authorization of 0xd6e70365C8E8DDa9a4ca662C07bbE663b017755E to Grant",
         "fields": [
           {
             "label": "Authorized",

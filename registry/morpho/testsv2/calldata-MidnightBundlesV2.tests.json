@@ -62,6 +62,7 @@
       "txHash": "0xd60e1d8e9481992de25aff344c9dbd3e5253da2278816e960f8fb56189010af3",
       "expected": {
         "intent": "Manage Midnight offers",
+        "interpolatedIntent": "Update offers with ratifier 0x08a0e69772315652165921D722B3caAea4C326e6",
         "fields": [
           {
             "label": "Blue loan token",
@@ -113,6 +114,7 @@
       "txHash": "0x4fb86e1ec777dbcbbcf0074c5635252680c84b5adfe537daf523eaf18eda262b",
       "expected": {
         "intent": "Buy and withdraw collateral",
+        "interpolatedIntent": "Buy 115792089237316195423570985008687907853269984665640564039457584007913129.639935 USDC at maturity for max 10.108121 USDC",
         "fields": [
           {
             "label": "Loan token",
@@ -320,6 +322,7 @@
       "txHash": "0xda2855bd9d3c003841d9ae0cb8afb70715822709aebfd38961cbe23499855643",
       "expected": {
         "intent": "Buy and withdraw collateral",
+        "interpolatedIntent": "Buy min 0 USDC at maturity for 0 USDC",
         "fields": [
           {
             "label": "Loan token",
@@ -411,6 +414,7 @@
       "txHash": "0xa32c02bfc94d5604a6d4cad55856b10fd914ec989586aff5485403f31dff87b3",
       "expected": {
         "intent": "Supply and sell collateral",
+        "interpolatedIntent": "Sell max 10.101675 USDC at maturity for 10 USDC to 0x535690CB1330232dd4f2ac5B724040751bdF4C91",
         "fields": [
           {
             "label": "Loan token",

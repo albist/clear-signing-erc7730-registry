@@ -62,6 +62,7 @@
       "txHash": "0xabfbfaf574f48391199f35fdee28a317d0a5664d38654e24f79f2c6c88c83ebd",
       "expected": {
         "intent": "Create buy callback",
+        "interpolatedIntent": "Create buy callback for 0x3dd21853BB365C2cf6C9D933f2BFDE1a5C54461C",
         "fields": [
           {
             "label": "Owner",
@@ -77,6 +78,7 @@
       "txHash": "0xc816fa0d5d26a42924d7d91a4c480a2075d4adbf5e70080eafcb1e589c25126c",
       "expected": {
         "intent": "Create buy callback",
+        "interpolatedIntent": "Create buy callback for 0x3C521Cc604AFbD0dF28A2917C07a91fd323C13CA",
         "fields": [
           {
             "label": "Owner",
