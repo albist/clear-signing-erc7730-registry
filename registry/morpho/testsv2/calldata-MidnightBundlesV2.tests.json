@@ -114,7 +114,7 @@
       "txHash": "0x4fb86e1ec777dbcbbcf0074c5635252680c84b5adfe537daf523eaf18eda262b",
       "expected": {
         "intent": "Buy and withdraw collateral",
-        "interpolatedIntent": "Buy 115792089237316195423570985008687907853269984665640564039457584007913129.639935 USDC at maturity for max 10.108121 USDC",
+        "interpolatedIntent": "Buy Full debt USDC at maturity for max 10.108121 USDC",
         "fields": [
           {
             "label": "Loan token",
@@ -138,7 +138,7 @@
           },
           {
             "label": "Target amount",
-            "value": "115792089237316195423570985008687907853269984665640564039457584007913129.639935 USDC"
+            "value": "Full debt USDC"
           },
           {
             "label": "Max buyer assets",

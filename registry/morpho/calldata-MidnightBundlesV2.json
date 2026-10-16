@@ -370,7 +370,9 @@
             "format": "tokenAmount",
             "visible": "always",
             "params": {
-              "tokenPath": "#.market.loanToken"
+              "tokenPath": "#.market.loanToken",
+              "threshold": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+              "message": "Full debt"
             }
           },
           {
