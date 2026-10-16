@@ -129,31 +129,37 @@
           },
           {
             "path": "#.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -322,31 +328,37 @@
           },
           {
             "path": "#.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -413,46 +425,55 @@
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].token",
+            "label": "Collateral token",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].lltv",
+            "label": "LLTV",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].oracle",
+            "label": "Oracle",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -724,31 +745,37 @@
           },
           {
             "path": "#.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -815,46 +842,55 @@
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].token",
+            "label": "Collateral token",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].lltv",
+            "label": "LLTV",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].oracle",
+            "label": "Oracle",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -1126,31 +1162,37 @@
           },
           {
             "path": "#.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -1236,46 +1278,55 @@
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].token",
+            "label": "Collateral token",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].lltv",
+            "label": "LLTV",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].oracle",
+            "label": "Oracle",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.chainId",
+            "label": "Chain ID",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.midnight",
+            "label": "Midnight",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.rcfThreshold",
+            "label": "RCF threshold",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.enterGate",
+            "label": "Enter gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
+            "label": "Liquidator gate",
             "visible": "never",
             "format": "raw"
           },
           {
             "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
