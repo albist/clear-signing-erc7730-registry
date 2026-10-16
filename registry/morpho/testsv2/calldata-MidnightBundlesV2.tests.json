@@ -76,14 +76,6 @@
             "value": "0"
           },
           {
-            "label": "Chain ID",
-            "value": "0"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Loan token",
             "value": "0x0000000000000000000000000000000000000000"
           },
@@ -92,32 +84,12 @@
             "value": "1970-01-01 00:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "0"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Ratifier",
             "value": "0x08a0e69772315652165921D722B3caAea4C326e6"
           },
           {
             "label": "New root",
             "value": "0xeafbccd93cb963369a542fd49c11d828c202bb4778f41b595045fe7b03d4b7b9"
-          },
-          {
-            "label": "Signature height",
-            "value": "0"
-          },
-          {
-            "label": "Signature nonce",
-            "value": "0"
           },
           {
             "label": "Signature deadline",
@@ -143,32 +115,12 @@
         "intent": "Buy and withdraw collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
           {
             "label": "Maturity",
             "value": "2026-12-25 15:00:00Z"
-          },
-          {
-            "label": "RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
           },
           {
             "label": "Collateral tokens",
@@ -179,16 +131,12 @@
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
             "label": "Oracle",
             "value": "0x663BECd10daE6C4A3Dcd89F1d76c1174199639B9"
           },
           {
-            "label": "Target units",
-            "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            "label": "Target amount",
+            "value": "115792089237316195423570985008687907853269984665640564039457584007913129.639935 USDC"
           },
           {
             "label": "Max buyer assets",
@@ -211,12 +159,20 @@
             "value": "0x4cb6F4a4B29a79658299603404438A89A66a7D05"
           },
           {
-            "label": "Offer loan token",
+            "label": "Loan token",
             "value": "USDC"
           },
           {
-            "label": "Offer loan token",
+            "label": "Loan token",
             "value": "USDC"
+          },
+          {
+            "label": "Maturity",
+            "value": "2026-12-25 15:00:00Z"
+          },
+          {
+            "label": "Maturity",
+            "value": "2026-12-25 15:00:00Z"
           },
           {
             "label": "Offer max assets",
@@ -227,68 +183,20 @@
             "value": "0 USDC"
           },
           {
-            "label": "Offer max units",
-            "value": "340282366920938463463374607431768211455"
+            "label": "Offer max amount",
+            "value": "340282366920938463463374607431768.211455 USDC"
           },
           {
-            "label": "Offer max units",
-            "value": "340282366920938463463374607431768211455"
+            "label": "Offer max amount",
+            "value": "340282366920938463463374607431768.211455 USDC"
           },
           {
-            "label": "Fill units",
-            "value": "1003533"
+            "label": "Fill amount",
+            "value": "1.003533 USDC"
           },
           {
-            "label": "Fill units",
-            "value": "10099687"
-          },
-          {
-            "label": "Offer chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Offer chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Offer Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
-            "label": "Offer Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
-            "label": "Offer maturity",
-            "value": "2026-12-25 15:00:00Z"
-          },
-          {
-            "label": "Offer maturity",
-            "value": "2026-12-25 15:00:00Z"
-          },
-          {
-            "label": "Offer RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Offer RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Offer enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Offer enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Offer liq. gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Offer liq. gate",
-            "value": "0x0000000000000000000000000000000000000000"
+            "label": "Fill amount",
+            "value": "10.099687 USDC"
           },
           {
             "label": "Maker side",
@@ -414,14 +322,6 @@
         "intent": "Buy and withdraw collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -430,32 +330,8 @@
             "value": "2026-12-25 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH"
-          },
-          {
-            "label": "LLTV",
-            "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0xFEa2D58cEfCb9fcb597723c6bAE66fFE4193aFE4"
           },
           {
             "label": "Collateral tokens",
@@ -463,11 +339,15 @@
           },
           {
             "label": "LLTV",
+            "value": "86%"
+          },
+          {
+            "label": "LLTV",
             "value": "98%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0xFEa2D58cEfCb9fcb597723c6bAE66fFE4193aFE4"
           },
           {
             "label": "Oracle",
@@ -478,8 +358,8 @@
             "value": "0 USDC"
           },
           {
-            "label": "Min units",
-            "value": "0"
+            "label": "Min amount",
+            "value": "0 USDC"
           },
           {
             "label": "Reduce only",
@@ -533,32 +413,12 @@
         "intent": "Supply and sell collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
           {
             "label": "Maturity",
             "value": "2026-12-25 15:00:00Z"
-          },
-          {
-            "label": "RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
           },
           {
             "label": "Collateral tokens",
@@ -569,10 +429,6 @@
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
             "label": "Oracle",
             "value": "0x663BECd10daE6C4A3Dcd89F1d76c1174199639B9"
           },
@@ -581,8 +437,8 @@
             "value": "10 USDC"
           },
           {
-            "label": "Max units",
-            "value": "10101675"
+            "label": "Max amount",
+            "value": "10.101675 USDC"
           },
           {
             "label": "Reduce only",
@@ -605,20 +461,24 @@
             "value": "0x4cb6F4a4B29a79658299603404438A89A66a7D05"
           },
           {
-            "label": "Offer loan token",
+            "label": "Loan token",
             "value": "USDC"
+          },
+          {
+            "label": "Maturity",
+            "value": "2026-12-25 15:00:00Z"
           },
           {
             "label": "Offer max assets",
             "value": "0 USDC"
           },
           {
-            "label": "Offer max units",
-            "value": "340282366920938463463374607431768211455"
+            "label": "Offer max amount",
+            "value": "340282366920938463463374607431768.211455 USDC"
           },
           {
-            "label": "Fill units",
-            "value": "10099687"
+            "label": "Fill amount",
+            "value": "10.099687 USDC"
           },
           {
             "label": "Referral fee",
@@ -634,30 +494,6 @@
           },
           {
             "label": "Wrapped native",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Offer chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Offer Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
-            "label": "Offer maturity",
-            "value": "2026-12-25 15:00:00Z"
-          },
-          {
-            "label": "Offer RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Offer enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Offer liq. gate",
             "value": "0x0000000000000000000000000000000000000000"
           },
           {

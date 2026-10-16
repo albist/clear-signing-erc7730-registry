@@ -64,14 +64,6 @@
         "intent": "Take offer",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "1"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x471686c42792F93528B000beF54bC10E3aa2045f"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -80,32 +72,8 @@
             "value": "2026-09-25 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "300000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH-USDC-collat"
-          },
-          {
-            "label": "LLTV",
-            "value": "98%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0x5c4fd2864C21F0b81730B4EC74030130aA2193Ca"
           },
           {
             "label": "Collateral tokens",
@@ -113,11 +81,15 @@
           },
           {
             "label": "LLTV",
+            "value": "98%"
+          },
+          {
+            "label": "LLTV",
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0x5c4fd2864C21F0b81730B4EC74030130aA2193Ca"
           },
           {
             "label": "Oracle",
@@ -164,8 +136,8 @@
             "value": "false"
           },
           {
-            "label": "Max units",
-            "value": "0"
+            "label": "Max amount",
+            "value": "0 USDC"
           },
           {
             "label": "Max assets",
@@ -176,8 +148,8 @@
             "value": "0%"
           },
           {
-            "label": "Fill units",
-            "value": "952344"
+            "label": "Fill amount",
+            "value": "0.952344 USDC"
           },
           {
             "label": "Taker",
@@ -203,14 +175,6 @@
         "intent": "Take offer",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -219,32 +183,8 @@
             "value": "2026-07-30 00:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "0"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "cbBTC"
-          },
-          {
-            "label": "LLTV",
-            "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0x663BECd10daE6C4A3Dcd89F1d76c1174199639B9"
           },
           {
             "label": "Collateral tokens",
@@ -252,11 +192,15 @@
           },
           {
             "label": "LLTV",
+            "value": "86%"
+          },
+          {
+            "label": "LLTV",
             "value": "98%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0x663BECd10daE6C4A3Dcd89F1d76c1174199639B9"
           },
           {
             "label": "Oracle",
@@ -303,8 +247,8 @@
             "value": "false"
           },
           {
-            "label": "Max units",
-            "value": "0"
+            "label": "Max amount",
+            "value": "0 USDC"
           },
           {
             "label": "Max assets",
@@ -315,8 +259,8 @@
             "value": "0%"
           },
           {
-            "label": "Fill units",
-            "value": "202369"
+            "label": "Fill amount",
+            "value": "0.202369 USDC"
           },
           {
             "label": "Taker",
@@ -342,14 +286,6 @@
         "intent": "Withdraw loan",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "1"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x471686c42792F93528B000beF54bC10E3aa2045f"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -358,32 +294,8 @@
             "value": "2026-09-25 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "300000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "USDC"
-          },
-          {
-            "label": "LLTV",
-            "value": "98%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0x8d1A84515B54C58bAc3b18315B6b1f17dA5cf6ca"
           },
           {
             "label": "Collateral tokens",
@@ -391,19 +303,23 @@
           },
           {
             "label": "LLTV",
+            "value": "98%"
+          },
+          {
+            "label": "LLTV",
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0x8d1A84515B54C58bAc3b18315B6b1f17dA5cf6ca"
           },
           {
             "label": "Oracle",
             "value": "0xA6D6950c9F177F1De7f7757FB33539e3Ec60182a"
           },
           {
-            "label": "Units",
-            "value": "299802"
+            "label": "Amount",
+            "value": "0.299802 USDC"
           },
           {
             "label": "On behalf",
@@ -425,32 +341,12 @@
         "intent": "Withdraw loan",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "WETH"
           },
           {
             "label": "Maturity",
             "value": "2026-08-28 15:00:00Z"
-          },
-          {
-            "label": "RCF threshold",
-            "value": "0"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
           },
           {
             "label": "Collateral tokens",
@@ -461,16 +357,12 @@
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
             "label": "Oracle",
             "value": "0xD09048c8B568Dbf5f189302beA26c9edABFC4858"
           },
           {
-            "label": "Units",
-            "value": "20000000000000"
+            "label": "Amount",
+            "value": "0.00002 WETH"
           },
           {
             "label": "On behalf",
@@ -492,14 +384,6 @@
         "intent": "Repay loan",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "1"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x471686c42792F93528B000beF54bC10E3aa2045f"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -508,32 +392,8 @@
             "value": "2026-09-25 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "300000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH-USDC-collat"
-          },
-          {
-            "label": "LLTV",
-            "value": "98%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0x5c4fd2864C21F0b81730B4EC74030130aA2193Ca"
           },
           {
             "label": "Collateral tokens",
@@ -541,19 +401,23 @@
           },
           {
             "label": "LLTV",
+            "value": "98%"
+          },
+          {
+            "label": "LLTV",
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0x5c4fd2864C21F0b81730B4EC74030130aA2193Ca"
           },
           {
             "label": "Oracle",
             "value": "0x0F948CBa8231Db7898ef36A4212581Ad7b1B4580"
           },
           {
-            "label": "Units",
-            "value": "952344"
+            "label": "Amount",
+            "value": "0.952344 USDC"
           },
           {
             "label": "On behalf",
@@ -575,14 +439,6 @@
         "intent": "Repay loan",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -591,32 +447,8 @@
             "value": "2026-07-30 00:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "3000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH"
-          },
-          {
-            "label": "LLTV",
-            "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0xFEa2D58cEfCb9fcb597723c6bAE66fFE4193aFE4"
           },
           {
             "label": "Collateral tokens",
@@ -624,19 +456,23 @@
           },
           {
             "label": "LLTV",
+            "value": "86%"
+          },
+          {
+            "label": "LLTV",
             "value": "98%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0xFEa2D58cEfCb9fcb597723c6bAE66fFE4193aFE4"
           },
           {
             "label": "Oracle",
             "value": "0x784519B1b59A1e1498f077066bB9336672bcc3EE"
           },
           {
-            "label": "Units",
-            "value": "1960000"
+            "label": "Amount",
+            "value": "1.96 USDC"
           },
           {
             "label": "On behalf",
@@ -658,14 +494,6 @@
         "intent": "Supply collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "1"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x471686c42792F93528B000beF54bC10E3aa2045f"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -674,28 +502,12 @@
             "value": "2026-08-28 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "300000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "cbBTC"
           },
           {
             "label": "LLTV",
             "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
           },
           {
             "label": "Oracle",
@@ -725,14 +537,6 @@
         "intent": "Supply collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -741,28 +545,12 @@
             "value": "2026-07-10 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "0"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH"
           },
           {
             "label": "LLTV",
             "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
           },
           {
             "label": "Oracle",
@@ -792,14 +580,6 @@
         "intent": "Withdraw collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "1"
-          },
-          {
-            "label": "Midnight",
-            "value": "0x471686c42792F93528B000beF54bC10E3aa2045f"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -808,32 +588,8 @@
             "value": "2026-09-25 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "300000000000"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "USDC"
-          },
-          {
-            "label": "LLTV",
-            "value": "98%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
-          },
-          {
-            "label": "Oracle",
-            "value": "0x8d1A84515B54C58bAc3b18315B6b1f17dA5cf6ca"
           },
           {
             "label": "Collateral tokens",
@@ -841,11 +597,15 @@
           },
           {
             "label": "LLTV",
+            "value": "98%"
+          },
+          {
+            "label": "LLTV",
             "value": "86%"
           },
           {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
+            "label": "Oracle",
+            "value": "0x8d1A84515B54C58bAc3b18315B6b1f17dA5cf6ca"
           },
           {
             "label": "Oracle",
@@ -879,14 +639,6 @@
         "intent": "Withdraw collateral",
         "fields": [
           {
-            "label": "Chain ID",
-            "value": "8453"
-          },
-          {
-            "label": "Midnight",
-            "value": "0xAdedD8ab6dE832766Fedf0FaC4992E5C4D3EA18A"
-          },
-          {
             "label": "Loan token",
             "value": "USDC"
           },
@@ -895,28 +647,12 @@
             "value": "2026-07-10 15:00:00Z"
           },
           {
-            "label": "RCF threshold",
-            "value": "0"
-          },
-          {
-            "label": "Enter gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
-            "label": "Liquidator gate",
-            "value": "0x0000000000000000000000000000000000000000"
-          },
-          {
             "label": "Collateral tokens",
             "value": "WETH"
           },
           {
             "label": "LLTV",
             "value": "86%"
-          },
-          {
-            "label": "Liq. cursor",
-            "value": "300000000000000000"
           },
           {
             "label": "Oracle",
