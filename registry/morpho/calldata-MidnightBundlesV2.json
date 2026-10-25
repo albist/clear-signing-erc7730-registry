@@ -38,8 +38,8 @@
   "display": {
     "formats": {
       "midnightBundlesV2CancelAndMake((address loanToken,address collateralToken,address oracle,address irm,uint256 lltv) blueMarket,uint256 assetsToPark,bytes32 callbackSalt,(uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,(uint256 collateralIndex,uint256 assets)[] collateralSupplies,address ratifier,bytes32 newRoot,uint256 signatureHeight,uint128 signatureNonce,uint256 signatureDeadline,uint8 v,bytes32 r,bytes32 s,(bytes32 group,uint128 maxConsumed)[] groupsToCancel,bytes payload,uint256 deadline,address wrappedNative)": {
-        "intent": "Manage Midnight offers",
-        "interpolatedIntent": "Update offers with ratifier {#.ratifier}",
+        "intent": "Authorize ratifier and manage offers",
+        "interpolatedIntent": "Authorize {#.ratifier} on Midnight and update offers",
         "fields": [
           {
             "path": "#.blueMarket.loanToken",
@@ -61,6 +61,46 @@
                 "token"
               ]
             },
+            "visible": "always"
+          },
+          {
+            "label": "Oracle",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "wallet",
+                "eoa",
+                "contract",
+                "token",
+                "collection"
+              ]
+            },
+            "path": "#.blueMarket.oracle",
+            "visible": "always"
+          },
+          {
+            "label": "Irm",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "wallet",
+                "eoa",
+                "contract",
+                "token",
+                "collection"
+              ]
+            },
+            "path": "#.blueMarket.irm",
+            "visible": "always"
+          },
+          {
+            "label": "Liquidation LTV",
+            "format": "unit",
+            "params": {
+              "base": "%",
+              "decimals": 16
+            },
+            "path": "#.blueMarket.lltv",
             "visible": "always"
           },
           {
@@ -97,36 +137,48 @@
             "path": "#.market.maturity"
           },
           {
-            "label": "Collateral tokens",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].token"
-          },
-          {
-            "label": "LLTV",
-            "format": "unit",
-            "params": {
-              "base": "%",
-              "decimals": 16
-            },
-            "path": "#.market.collateralParams.[].lltv"
-          },
-          {
-            "label": "Oracle",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "contract",
-                "eoa",
-                "wallet",
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].oracle"
+            "path": "#.market.collateralParams.[]",
+            "iteration": "bundled",
+            "fields": [
+              {
+                "label": "Collateral token",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "token"
+                  ]
+                },
+                "path": "token",
+                "visible": "always"
+              },
+              {
+                "label": "LLTV",
+                "format": "unit",
+                "params": {
+                  "base": "%",
+                  "decimals": 16
+                },
+                "path": "lltv",
+                "visible": "always"
+              },
+              {
+                "label": "Oracle",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "contract"
+                  ]
+                },
+                "path": "oracle",
+                "visible": "always"
+              },
+              {
+                "label": "Liquidation cursor",
+                "format": "raw",
+                "path": "liquidationCursor",
+                "visible": "never"
+              }
+            ]
           },
           {
             "path": "#.market.chainId",
@@ -159,12 +211,6 @@
             "format": "raw"
           },
           {
-            "path": "#.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
             "path": "#.collateralSupplies.[].collateralIndex",
             "label": "Collateral index",
             "format": "raw",
@@ -172,13 +218,13 @@
           },
           {
             "path": "#.collateralSupplies.[].assets",
-            "label": "Collateral amount",
+            "label": "Collateral amount (base units of the token at the index)",
             "format": "raw",
             "visible": "always"
           },
           {
             "path": "#.ratifier",
-            "label": "Ratifier",
+            "label": "Ratifier (full account access when a new root is set)",
             "format": "addressName",
             "params": {
               "types": [
@@ -271,11 +317,17 @@
               ]
             },
             "visible": "always"
+          },
+          {
+            "label": "Native amount to wrap",
+            "format": "amount",
+            "path": "@.value",
+            "visible": "always"
           }
         ]
       },
       "midnightBundlesV2BuyWithUnitsTargetAndWithdrawCollateral((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetUnits,uint256 maxBuyerAssets,bool reduceOnly,bool repayEnabled,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,(uint256 collateralIndex,uint256 assets)[] collateralWithdrawals,address collateralReceiver,uint256 referralFeePct,address referralFeeRecipient,uint256 maxContinuousFee,uint256 deadline,address wrappedNative)": {
-        "intent": "Buy and withdraw collateral",
+        "intent": "Lend or repay, withdraw collateral",
         "interpolatedIntent": "Buy {#.targetUnits} at maturity for max {#.maxBuyerAssets}",
         "fields": [
           {
@@ -297,36 +349,48 @@
             "path": "#.market.maturity"
           },
           {
-            "label": "Collateral tokens",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].token"
-          },
-          {
-            "label": "LLTV",
-            "format": "unit",
-            "params": {
-              "base": "%",
-              "decimals": 16
-            },
-            "path": "#.market.collateralParams.[].lltv"
-          },
-          {
-            "label": "Oracle",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "contract",
-                "eoa",
-                "wallet",
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].oracle"
+            "path": "#.market.collateralParams.[]",
+            "iteration": "bundled",
+            "fields": [
+              {
+                "label": "Collateral token",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "token"
+                  ]
+                },
+                "path": "token",
+                "visible": "always"
+              },
+              {
+                "label": "LLTV",
+                "format": "unit",
+                "params": {
+                  "base": "%",
+                  "decimals": 16
+                },
+                "path": "lltv",
+                "visible": "always"
+              },
+              {
+                "label": "Oracle",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "contract"
+                  ]
+                },
+                "path": "oracle",
+                "visible": "always"
+              },
+              {
+                "label": "Liquidation cursor",
+                "format": "raw",
+                "path": "liquidationCursor",
+                "visible": "never"
+              }
+            ]
           },
           {
             "path": "#.market.chainId",
@@ -355,12 +419,6 @@
           {
             "path": "#.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -446,6 +504,12 @@
             "format": "raw"
           },
           {
+            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
+            "visible": "never",
+            "format": "raw"
+          },
+          {
             "path": "#.offerFills.[].offer.market.chainId",
             "label": "Chain ID",
             "visible": "never",
@@ -472,12 +536,6 @@
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -600,7 +658,7 @@
           },
           {
             "path": "#.offerFills.[].offer.continuousFeeCap",
-            "label": "Offer fee cap",
+            "label": "Continuous fee cap (per second, max = no cap)",
             "format": "unit",
             "params": {
               "base": "%",
@@ -622,7 +680,7 @@
           },
           {
             "path": "#.collateralWithdrawals.[].assets",
-            "label": "Collateral amount",
+            "label": "Collateral amount (max value = full balance)",
             "format": "raw",
             "visible": "always"
           },
@@ -691,11 +749,17 @@
               ]
             },
             "visible": "always"
+          },
+          {
+            "label": "Native amount to wrap",
+            "format": "amount",
+            "path": "@.value",
+            "visible": "always"
           }
         ]
       },
       "midnightBundlesV2BuyWithAssetsTargetAndWithdrawCollateral((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetBuyerAssets,uint256 minUnits,bool reduceOnly,bool repayEnabled,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,(uint256 collateralIndex,uint256 assets)[] collateralWithdrawals,address collateralReceiver,uint256 referralFeePct,address referralFeeRecipient,uint256 maxContinuousFee,uint256 deadline,address wrappedNative)": {
-        "intent": "Buy and withdraw collateral",
+        "intent": "Lend or repay, withdraw collateral",
         "interpolatedIntent": "Buy min {#.minUnits} at maturity for {#.targetBuyerAssets}",
         "fields": [
           {
@@ -717,36 +781,48 @@
             "path": "#.market.maturity"
           },
           {
-            "label": "Collateral tokens",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].token"
-          },
-          {
-            "label": "LLTV",
-            "format": "unit",
-            "params": {
-              "base": "%",
-              "decimals": 16
-            },
-            "path": "#.market.collateralParams.[].lltv"
-          },
-          {
-            "label": "Oracle",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "contract",
-                "eoa",
-                "wallet",
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].oracle"
+            "path": "#.market.collateralParams.[]",
+            "iteration": "bundled",
+            "fields": [
+              {
+                "label": "Collateral token",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "token"
+                  ]
+                },
+                "path": "token",
+                "visible": "always"
+              },
+              {
+                "label": "LLTV",
+                "format": "unit",
+                "params": {
+                  "base": "%",
+                  "decimals": 16
+                },
+                "path": "lltv",
+                "visible": "always"
+              },
+              {
+                "label": "Oracle",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "contract"
+                  ]
+                },
+                "path": "oracle",
+                "visible": "always"
+              },
+              {
+                "label": "Liquidation cursor",
+                "format": "raw",
+                "path": "liquidationCursor",
+                "visible": "never"
+              }
+            ]
           },
           {
             "path": "#.market.chainId",
@@ -775,12 +851,6 @@
           {
             "path": "#.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -864,6 +934,12 @@
             "format": "raw"
           },
           {
+            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
+            "visible": "never",
+            "format": "raw"
+          },
+          {
             "path": "#.offerFills.[].offer.market.chainId",
             "label": "Chain ID",
             "visible": "never",
@@ -890,12 +966,6 @@
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -1018,7 +1088,7 @@
           },
           {
             "path": "#.offerFills.[].offer.continuousFeeCap",
-            "label": "Offer fee cap",
+            "label": "Continuous fee cap (per second, max = no cap)",
             "format": "unit",
             "params": {
               "base": "%",
@@ -1040,7 +1110,7 @@
           },
           {
             "path": "#.collateralWithdrawals.[].assets",
-            "label": "Collateral amount",
+            "label": "Collateral amount (max value = full balance)",
             "format": "raw",
             "visible": "always"
           },
@@ -1109,11 +1179,17 @@
               ]
             },
             "visible": "always"
+          },
+          {
+            "label": "Native amount to wrap",
+            "format": "amount",
+            "path": "@.value",
+            "visible": "always"
           }
         ]
       },
       "midnightBundlesV2SupplyCollateralAndSellWithAssetsTarget((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,uint256 targetSellerAssets,uint256 maxUnits,bool reduceOnly,address receiver,(uint256 collateralIndex,uint256 assets)[] collateralSupplies,(((uint256 chainId,address midnight,address loanToken,(address token,uint256 lltv,uint256 liquidationCursor,address oracle)[] collateralParams,uint256 maturity,uint256 rcfThreshold,address enterGate,address liquidatorGate) market,bool buy,address maker,uint256 start,uint256 expiry,uint256 tick,bytes32 group,address callback,bytes callbackData,address receiverIfMakerIsSeller,address ratifier,bool reduceOnly,uint128 maxUnits,uint128 maxAssets,uint256 continuousFeeCap) offer,bytes ratifierData,uint256 units)[] offerFills,uint256 referralFeePct,address referralFeeRecipient,uint256 deadline,address wrappedNative)": {
-        "intent": "Supply and sell collateral",
+        "intent": "Supply collateral, borrow or exit",
         "interpolatedIntent": "Sell max {#.maxUnits} at maturity for {#.targetSellerAssets} to {#.receiver}",
         "fields": [
           {
@@ -1135,36 +1211,48 @@
             "path": "#.market.maturity"
           },
           {
-            "label": "Collateral tokens",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].token"
-          },
-          {
-            "label": "LLTV",
-            "format": "unit",
-            "params": {
-              "base": "%",
-              "decimals": 16
-            },
-            "path": "#.market.collateralParams.[].lltv"
-          },
-          {
-            "label": "Oracle",
-            "format": "addressName",
-            "params": {
-              "types": [
-                "contract",
-                "eoa",
-                "wallet",
-                "token"
-              ]
-            },
-            "path": "#.market.collateralParams.[].oracle"
+            "path": "#.market.collateralParams.[]",
+            "iteration": "bundled",
+            "fields": [
+              {
+                "label": "Collateral token",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "token"
+                  ]
+                },
+                "path": "token",
+                "visible": "always"
+              },
+              {
+                "label": "LLTV",
+                "format": "unit",
+                "params": {
+                  "base": "%",
+                  "decimals": 16
+                },
+                "path": "lltv",
+                "visible": "always"
+              },
+              {
+                "label": "Oracle",
+                "format": "addressName",
+                "params": {
+                  "types": [
+                    "contract"
+                  ]
+                },
+                "path": "oracle",
+                "visible": "always"
+              },
+              {
+                "label": "Liquidation cursor",
+                "format": "raw",
+                "path": "liquidationCursor",
+                "visible": "never"
+              }
+            ]
           },
           {
             "path": "#.market.chainId",
@@ -1193,12 +1281,6 @@
           {
             "path": "#.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -1247,7 +1329,7 @@
           },
           {
             "path": "#.collateralSupplies.[].assets",
-            "label": "Collateral amount",
+            "label": "Collateral amount (base units of the token at the index)",
             "format": "raw",
             "visible": "always"
           },
@@ -1301,6 +1383,12 @@
             "format": "raw"
           },
           {
+            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
+            "label": "Liquidation cursor",
+            "visible": "never",
+            "format": "raw"
+          },
+          {
             "path": "#.offerFills.[].offer.market.chainId",
             "label": "Chain ID",
             "visible": "never",
@@ -1327,12 +1415,6 @@
           {
             "path": "#.offerFills.[].offer.market.liquidatorGate",
             "label": "Liquidator gate",
-            "visible": "never",
-            "format": "raw"
-          },
-          {
-            "path": "#.offerFills.[].offer.market.collateralParams.[].liquidationCursor",
-            "label": "Liquidation cursor",
             "visible": "never",
             "format": "raw"
           },
@@ -1410,6 +1492,12 @@
                 "token"
               ]
             },
+            "visible": "always"
+          },
+          {
+            "label": "Native amount to wrap",
+            "format": "amount",
+            "path": "@.value",
             "visible": "always"
           },
           {
@@ -1498,7 +1586,7 @@
           },
           {
             "path": "#.offerFills.[].offer.continuousFeeCap",
-            "label": "Offer fee cap",
+            "label": "Continuous fee cap (per second, max = no cap)",
             "format": "unit",
             "params": {
               "base": "%",
